@@ -31,4 +31,8 @@ const team = [
     },   
 ]
 
-    console.log(team);
+    // console.log(team);
+
+    for (const employee of team) {
+        console.log(employee);
+    }
