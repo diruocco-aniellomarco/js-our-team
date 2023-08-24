@@ -31,8 +31,10 @@ const team = [
     },   
 ]
 
+const elencoTeam = document.getElementById('elenco-team');
     // console.log(team);
 
     for (const employee of team) {
         console.log(employee);
+        elencoTeam.innerHTML += 'Nome: ' + employee.name + '<br>' + ' Ruolo: ' + employee.role + '<br>' + ' Photo: ' + employee.photo + '<br>' + '<br>';
     }
