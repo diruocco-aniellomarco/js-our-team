@@ -32,10 +32,28 @@ const team = [
 ]
 
 const elencoTeam = document.getElementById('elenco-team');
-    // console.log(team);
+    
+    //BONUS 1:
+
+    // for (const employee of team) {
+    //     console.log(employee);
+    //     elencoTeam.innerHTML += 'Nome: ' + employee.name + '<br>' + ' Ruolo: ' + employee.role + '<br>' + ' Photo: '+ '<br>';
+    //     elencoTeam.innerHTML +=`<img src="./img/${employee.photo}" alt="employeePhoto">`   + '<br>' + '<br>';
+    // }
+
+    //BONUS 2:
 
     for (const employee of team) {
         console.log(employee);
-        elencoTeam.innerHTML += 'Nome: ' + employee.name + '<br>' + ' Ruolo: ' + employee.role + '<br>' + ' Photo: '+ '<br>';
-        elencoTeam.innerHTML +=`<img src="./img/${employee.photo}" alt="employeePhoto">`   + '<br>' + '<br>';
+        elencoTeam.innerHTML += `
+        <div class="card m-3 col-3">
+
+            <img src="./img/${employee.photo}" alt="employeePhoto">
+
+            <div class="card-body">
+                <h5 class="card-title">${employee.name}</h5>
+                <p class="card-text">${employee.role}</p>
+            </div>
+        </div>`;
+        
     }
