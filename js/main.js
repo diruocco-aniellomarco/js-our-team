@@ -36,5 +36,6 @@ const elencoTeam = document.getElementById('elenco-team');
 
     for (const employee of team) {
         console.log(employee);
-        elencoTeam.innerHTML += 'Nome: ' + employee.name + '<br>' + ' Ruolo: ' + employee.role + '<br>' + ' Photo: ' + employee.photo + '<br>' + '<br>';
+        elencoTeam.innerHTML += 'Nome: ' + employee.name + '<br>' + ' Ruolo: ' + employee.role + '<br>' + ' Photo: '+ '<br>';
+        elencoTeam.innerHTML +=`<img src="./img/${employee.photo}" alt="employeePhoto">`   + '<br>' + '<br>';
     }
